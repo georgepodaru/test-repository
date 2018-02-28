@@ -1,0 +1,13 @@
+os: linux
+files:
+	 - source: /
+	   destination: /home/incites/ftp/files/testRepository
+	hooks:
+	  AfterInstall:
+	    - location: scripts/install.sh
+	      runas: root
+	      timeout: 300
+	  ApplicationStart:
+	    - location: scripts/start.sh
+	      runas: root
+	      timeout: 60
