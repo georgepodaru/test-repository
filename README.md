@@ -1,2 +1,2 @@
 # test-repository
-new test
+test
